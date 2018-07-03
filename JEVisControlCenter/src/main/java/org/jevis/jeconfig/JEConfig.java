@@ -101,7 +101,7 @@ public class JEConfig extends Application {
 
         Parameters parameters = getParameters();
         _config.parseParameters(parameters);
-        I18n.getInstance().loadBundel(Locale.getDefault());
+        I18n.getInstance().loadBundle(Locale.getDefault());
         JEConfig.PROGRAMM_INFO.setName(I18n.getInstance().getString("appname"));
     }
 
@@ -249,7 +249,7 @@ public class JEConfig extends Application {
                     logger.debug("Start JEVis Control Center");
                     _mainDS = login.getDataSource();
                     JEConfig.userpassword = login.getUserPassword();
-                    I18n.getInstance().loadBundel(login.getSelectedLocale());
+                    I18n.getInstance().loadBundle(login.getSelectedLocale());
                     I18nWS.getInstance().setDataSource((JEVisDataSourceWS) _mainDS);
                     _config.setLocale(login.getSelectedLocale());
 

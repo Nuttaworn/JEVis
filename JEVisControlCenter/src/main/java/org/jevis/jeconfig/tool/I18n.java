@@ -27,9 +27,9 @@ public class I18n {
 
     }
 
-    public void loadBundel(Locale local){
-        this.locale=local;
-        bundle = ResourceBundle.getBundle("JEVisCC", local);
+    public void loadBundle(Locale locale) {
+        this.locale = locale;
+        bundle = ResourceBundle.getBundle("JEVisCC", locale);
     }
 
 
@@ -57,6 +57,15 @@ public class I18n {
             System.out.println("Missing translation ["+locale.getISO3Country()+"] Key: "+key);
             return "*"+key+"*";
         }
+    }
+
+    /**
+     * Returns the used locale
+     *
+     * @return
+     */
+    public Locale getLocale() {
+        return locale;
     }
 
 }
