@@ -429,5 +429,4 @@ public class CalculationViewController {
         buttonSqrt.setText("\u221a");
         buttonSqrt.textProperty().setValue("\u221a");
     }
-
 }
