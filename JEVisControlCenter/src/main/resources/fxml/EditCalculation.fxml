@@ -103,7 +103,7 @@
                                                 GridPane.rowIndex="1"/>
                                         <Button fx:id="buttonPi" alignment="CENTER" contentDisplay="CENTER"
                                                 minWidth="50.0" mnemonicParsing="false" onAction="#onPi"
-                                                onMouseClicked="#onPi" text="pi" GridPane.columnIndex="4"
+                                                onMouseClicked="#onPi" text="%button.pi" GridPane.columnIndex="4"
                                                 GridPane.rowIndex="4"/>
                                         <Button fx:id="buttonBracketClose" alignment="CENTER" contentDisplay="CENTER"
                                                 minWidth="50.0" mnemonicParsing="false" onAction="#onBracketClose"
@@ -130,7 +130,7 @@
                                                 GridPane.rowIndex="3"/>
                                         <Button fx:id="buttonSqrt" alignment="CENTER" contentDisplay="CENTER"
                                                 minWidth="50.0" mnemonicParsing="false" onAction="#onSqrt"
-                                                onMouseClicked="#onSqrt" text="sqrt" GridPane.columnIndex="4"
+                                                onMouseClicked="#onSqrt" text="%button.sqrt" GridPane.columnIndex="4"
                                                 GridPane.rowIndex="2"/>
                                         <Button fx:id="buttonLog" alignment="CENTER" contentDisplay="CENTER"
                                                 minWidth="50.0" mnemonicParsing="false" onAction="#onLog"
@@ -205,18 +205,19 @@
                                     <children>
                                         <Button fx:id="buttonSmaller" alignment="CENTER" contentDisplay="CENTER"
                                                 minWidth="50.0" mnemonicParsing="false" onAction="#onSmaller"
-                                                onMouseClicked="#onSmaller" text="&lt;"/>
+                                                onMouseClicked="#onSmaller" text="%button.less"/>
                                         <Button fx:id="buttonSmallerEquals" alignment="CENTER" contentDisplay="CENTER"
                                                 minWidth="50.0" mnemonicParsing="false" onAction="#onSmallerEquals"
-                                                onMouseClicked="#onSmallerEquals" text="&lt;="
+                                                onMouseClicked="#onSmallerEquals" text="%button.lessorequal"
                                                 GridPane.columnIndex="1"/>
                                         <Button fx:id="buttonGreaterEquals" alignment="CENTER" contentDisplay="CENTER"
                                                 minWidth="50.0" mnemonicParsing="false" onAction="#onGreaterEquals"
-                                                onMouseClicked="#onGreaterEquals" text="&gt;="
+                                                onMouseClicked="#onGreaterEquals" text="%button.greaterorequal"
                                                 GridPane.columnIndex="2"/>
                                         <Button fx:id="buttonGreater" alignment="CENTER" contentDisplay="CENTER"
                                                 minWidth="50.0" mnemonicParsing="false" onAction="#onGreater"
-                                                onMouseClicked="#onGreater" text="&gt;" GridPane.columnIndex="3"/>
+                                                onMouseClicked="#onGreater" text="%button.greater"
+                                                GridPane.columnIndex="3"/>
                                         <Button fx:id="buttonEquals" alignment="CENTER" contentDisplay="CENTER"
                                                 minWidth="50.0" mnemonicParsing="false" onAction="#onEquals"
                                                 onContextMenuRequested="#onEquals" text="==" GridPane.columnIndex="4"/>
