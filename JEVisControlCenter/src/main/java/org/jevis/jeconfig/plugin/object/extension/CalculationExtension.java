@@ -17,6 +17,7 @@ import org.jevis.jeconfig.plugin.object.ObjectEditorExtension;
 import org.jevis.jeconfig.tool.I18n;
 
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 public class CalculationExtension implements ObjectEditorExtension {
 
@@ -66,8 +67,10 @@ public class CalculationExtension implements ObjectEditorExtension {
         //  button.setText("Calc");
         //ap.getChildren().add(button);
 
+        ResourceBundle resources = ResourceBundle.getBundle("PluginCalculator", I18n.getInstance().getLocale());
+
         Pane editConfigPane = new Pane();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/EditCalculation.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/EditCalculation.fxml"), resources);
         //fxmlLoader.setRoot();
         //fxmlLoader.setController(new CalculationViewController());
         try {
